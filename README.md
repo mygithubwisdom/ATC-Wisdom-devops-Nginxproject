@@ -28,15 +28,15 @@ This project involves deploying a simple landing page using **HTML**, **CSS**, a
 ## Steps to Deploy
 
 1. **Create an EC2 Instance**:
-   - Launch a new instance on AWS with the above configuration.
-   - Ensure proper security group settings to allow SSH and HTTP traffic (Ports 22 and 80).
+   - I Launched a new instance on AWS with the above configuration.
+   - I setup my security group settings to allow SSH and HTTP traffic (Ports 22 and 80).
 
 2. **Install NGINX**:
    - SSH into the instance using the `.pem` file:
      ```bash
      ssh -i "your-key.pem" ubuntu@<instance-public-ip>
      ```
-   - Update packages and install NGINX:
+   - Updated packages and install NGINX:
      ```bash
      sudo apt update
      sudo apt install nginx -y
@@ -45,28 +45,28 @@ This project involves deploying a simple landing page using **HTML**, **CSS**, a
 3. **Deploy the Landing Page**:
    - Clone your GitHub repository:
      ```bash
-     git clone https://github.com/your-username/your-repo.git
+     git clone https://github.com/mygithubwisdom/ATC-Wisdom-devops-Nginx.git
      ```
-   - Move the web page files to the NGINX web directory:
+   - I Moveed the web page files to the NGINX web directory:
      ```bash
      sudo cp -r your-repo/* /var/www/html/
      ```
 
 4. **Start NGINX**:
-   - Restart the NGINX server to apply changes:
+   - I restarted the NGINX server to apply changes:
      ```bash
      sudo systemctl restart nginx
      ```
 
 5. **Access the Web Page**:
-   - Open a browser and navigate to your instance's public IP to view the landing page.
+   - I opened a browser and navigate to your instance's public IP to view the landing page.
 
 ## Notes
-- Ensure the `.pem` file is securely stored and never shared.
-- Regularly update your EC2 instance to avoid security vulnerabilities.
-- Use version control (e.g., Git) to maintain the web page's source files.
+-I ensured the `.pem` file is securely stored and never shared.
+- for securities, I i regularly update your EC2 instance to avoid security vulnerabilities.
+- I will use version control (e.g., Git) to maintain the web page's source files.
 
 ---
 
-Happy deploying! 🎉
+Happy deployed my landinng page  🎉
 
